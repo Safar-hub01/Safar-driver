@@ -1,51 +1,51 @@
 {
-    "expo":  {
-                 "name":  "safar-driver-app",
-                 "slug":  "safar-driver-app",
-                 "version":  "1.0.0",
-                 "orientation":  "portrait",
-                 "icon":  "./assets/icon.png",
-                 "userInterfaceStyle":  "light",
-                 "splash":  {
-                                "image":  "./assets/splash-icon.png",
-                                "resizeMode":  "contain",
-                                "backgroundColor":  "#ffffff"
-                            },
-                 "ios":  {
-                             "supportsTablet":  true
-                         },
-                 "android":  {
-                                 "permissions":  [
-                                                     "ACCESS_COARSE_LOCATION",
-                                                     "ACCESS_FINE_LOCATION",
-                                                     "FOREGROUND_SERVICE",
-                                                     "FOREGROUND_SERVICE_LOCATION"
-                                                 ],
-                                 "adaptiveIcon":  {
-                                                      "backgroundColor":  "#E6F4FE",
-                                                      "foregroundImage":  "./assets/android-icon-foreground.png",
-                                                      "backgroundImage":  "./assets/android-icon-background.png",
-                                                      "monochromeImage":  "./assets/android-icon-monochrome.png"
-                                                  },
-                                 "package":  "com.anonymous.safardriverapp"
-                             },
-                 "plugins":  [
-                                 [
-                                     "expo-location",
-                                     {
-                                         "locationAlwaysAndWhenInUsePermission":  "Allow Safar Driver to share your live location with the fleet owner.",
-                                         "locationAlwaysPermission":  "Allow Safar Driver to track your location in the background.",
-                                         "locationWhenInUsePermission":  "Allow Safar Driver to access your location while you use the app.",
-                                         "isAndroidBackgroundLocationEnabled":  false,
-                                         "isAndroidForegroundServiceEnabled":  true
-                                     }
-                                 ]
-                             ],
-                 "extra":  {
-                               "productionApiBaseUrl":  "https://safar-admin.vercel.app"
-                           },
-                 "web":  {
-                             "favicon":  "./assets/favicon.png"
-                         }
-             }
+  "expo": {
+    "name": "safar-driver-app",
+    "slug": "safar-driver-app",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "package": "com.safar.driverapp"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Safar Driver to share your live location with the fleet owner.",
+          "locationAlwaysPermission": "Allow Safar Driver to track your location in the background.",
+          "locationWhenInUsePermission": "Allow Safar Driver to access your location while you use the app.",
+          "isAndroidBackgroundLocationEnabled": false,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      "expo-audio",
+      "react-native-ble-plx"
+    ],
+    "extra": {
+      "productionApiBaseUrl": "https://safar-admin.vercel.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
 }
